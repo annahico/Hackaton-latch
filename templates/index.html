@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Control System</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>IoT Control System</h1>
+    </header>
+    <main>
+        <section id="devices">
+            <h2>Estado de Dispositivos</h2>
+            <div id="device-list">
+                <!-- Los dispositivos se cargarán dinámicamente -->
+            </div>
+        </section>
+        <section id="controls">
+            <h2>Controlar Dispositivos</h2>
+            <form id="control-form">
+                <label for="device-id">ID del Dispositivo:</label>
+                <input type="text" id="device-id" name="device-id" required>
+
+                <label for="action">Acción:</label>
+                <select id="action" name="action">
+                    <option value="on">Encender</option>
+                    <option value="off">Apagar</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="control-message"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 IoT Control System</p>
+    </footer>
+    <script src="/static/js/scripts.js"></script>
+</body>
+
+</html>
